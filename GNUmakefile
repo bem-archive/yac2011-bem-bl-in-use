@@ -49,6 +49,6 @@ DO_GIT=@echo -- git $1 $2; \
 	fi
 
 bem-bl:
-	$(call DO_GIT,git://github.com/bemn/bem-bl.git,$@)
+	$(call DO_GIT,git://github.com/bem/bem-bl.git,$@)
 
 .PHONY: all
