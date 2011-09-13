@@ -3,3 +3,5 @@ pages/*/*.css
 pages/*/*.js
 !pages/*/*.bemjson.js
 pages/*/*.html
+pages/*/*.bemhtml
+.idea
