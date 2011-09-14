@@ -104,8 +104,20 @@
                                                 elem: 'item',
                                                 content: [
                                                     {
-                                                        elem: 'trigger',
-                                                        content: 'blocks-common'
+                                                            block: 'b-link',
+                                                            mods: { pseudo: 'yes', inner: 'yes' },
+                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger'}],
+                                                            content: [
+                                                                {
+                                                                    block: 'b-icon',
+                                                                    url: 'http://yandex.st/lego/_/Kx6F6RQnQFitm0qRxX7vpvfP0K0.png',
+                                                                    alt: 'Иконка Серпа'
+                                                                },
+                                                                {
+                                                                    elem: 'inner',
+                                                                    content: 'Общие блоки'
+                                                                }
+                                                            ]
                                                     },
                                                     {
                                                         elem: 'text',
