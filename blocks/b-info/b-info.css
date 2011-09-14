@@ -1,0 +1,8 @@
+.b-info
+{
+    padding: 20px 45px 100px;
+
+    box-shadow: 0 1px 10px #BFBFBF;
+
+    background: #f8f8f8 url(b-info.png) no-repeat 100% 100%;
+}
