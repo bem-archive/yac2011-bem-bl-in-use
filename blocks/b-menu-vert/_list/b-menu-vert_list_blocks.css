@@ -103,13 +103,15 @@
     padding: 0.2em 0 0.1em 1em;
 
     cursor: default;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__item:hover
 {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+
 
     background: #fafafa;
 }
