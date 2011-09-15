@@ -1,9 +1,21 @@
 .b-logo
 {
-    width: 120px;
-    height: 100%;
+    font-size: 340%;
+}
 
-    text-align: center;
+.b-logo__link:link,
+.b-logo__link:hover,
+.b-logo__link:visited
+{
+    text-decoration: none;
 
-    background: #fff;
+    color: #444;
+}
+
+.b-logo__text
+{
+    font: 60% 'Times New Roman';
+    font-style: italic;
+
+    margin-left: 0.5em;
 }

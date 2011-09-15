@@ -14,12 +14,12 @@
                 {
                     block: 'b-link',
                     mods: { inner: 'yes'},
-                    url: '',
+                    mix: [{ block: 'b-yaru-link' }],
+                    url: 'http://clubs.ya.ru/bem/',
                     content: [
                         {
                             block: 'b-icon',
-                            alt: 'icon',
-                            url: '/'
+                            alt: 'icon'
                         },
                         {
                             elem: 'inner',
@@ -28,13 +28,31 @@
                     ]
                 },
                 {
+                    block: 'b-logo',
+                    content: [
+                        {
+                            elem: 'link',
+                            url: '/',
+                            title: 'BEM-BL',
+                            content: 'BEM-BL'
+                        },
+                        {
+                            elem: 'text',
+                            content: 'blocks library'
+                        }
+                    ]
+                },
+                {
+                    block: 'b-search',
+                    attrs: { action: '/' },
+                    input: { elem: 'input' },
+                    button: { elem: 'button' }
+                },
+                {
                     block: 'b-head-links',
                     content: {
                         block: 'b-menu-vert',
                         mix: [{ block: 'b-head-links', elem: 'menu' }],
-                        tail: {
-                            elem: 'tail'
-                        },
                         content: [
                             {
                                 elem: 'item',
@@ -61,19 +79,6 @@
                                 }
                             }
                         ]
-                    }
-                },
-
-
-                {
-                    block: 'b-search',
-                    attrs: { action: '/search.xml' },
-                    input: {
-                        elem: 'input',
-                        attrs: { value: 'Поиск' }
-                    },
-                    button: {
-                        elem: 'button'
                     }
                 }
             ]

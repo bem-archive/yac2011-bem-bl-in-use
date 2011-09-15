@@ -15,8 +15,10 @@
 
     display: inline-block;
 
-    width: 140px;
+    width: 120px;
+    padding-right: 20px;
 
+    text-align: right;
     white-space: nowrap;
     
     color: #7f7e7e !important;
@@ -31,14 +33,14 @@
 
     width: 0.8em;
 
-    content: '+ ';
+    content: '+\a0';
 }
 
 .b-menu-vert_list_blocks .b-menu-vert__trigger_state_opened:before
 {
     vertical-align: text-top;
 
-    content: '- ';
+    content: '-\a0';
 }
 
 .b-menu-vert_list_blocks .b-menu-vert__layout-unit

@@ -1,6 +1,8 @@
 .b-head
 {
-    font-size: 80%;
+    margin: 2em 0 4%;
 
-    margin: 2em 0 5em;
+    padding: 0 0 0 4%;
+
+    background: red;
 }

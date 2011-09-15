@@ -3,3 +3,8 @@
 {
     color: #08f;
 }
+
+.b-link:hover
+{
+    color: #444;
+}
