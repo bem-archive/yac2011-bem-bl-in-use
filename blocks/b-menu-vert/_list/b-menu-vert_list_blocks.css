@@ -3,6 +3,11 @@
     font-size: 110%;
 }
 
+.b-menu-vert_list_blocks .b-menu-vert__layout-unit
+{
+    margin-bottom: 20px;
+}
+
 .b-menu-vert_list_blocks .b-menu-vert__text,
 .b-menu-vert_list_blocks .b-menu-vert__trigger
 {
@@ -43,21 +48,6 @@
     content: '-\a0';
 }
 
-.b-menu-vert_list_blocks .b-menu-vert__layout-unit
-{
-    margin-bottom: 20px;
-}
-
-.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__layout-unit
-{
-    margin-bottom: 10px;
-}
-
-.b-menu-vert_list_blocks .b-menu-vert_type_submenu
-{
-    margin: 1em 0 1.4em 9em;
-}
-
 .b-menu-vert_list_blocks .b-menu-vert__text
 {
     font-style: italic;
@@ -65,6 +55,37 @@
     padding-left: 0.3em;
 
     color: #7f7e7e;
+}
+
+.b-menu-vert_list_blocks .b-menu-vert__text:before
+{
+    content: '\2014\a0';
+}
+
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu
+{
+    margin: 1em 0 1.4em 9em;
+}
+
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__layout-unit
+{
+    margin-bottom: 10px;
+}
+
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__item
+{
+    padding: 0.2em 0 0.1em 1em;
+
+    cursor: default;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__item:hover
+{
+    background: #fafafa;
 }
 
 .b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__text
@@ -85,33 +106,10 @@
     float: left;
 }
 
-.b-menu-vert_list_blocks  .b-menu-vert_type_submenu .b-menu-vert__text:before
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__text:before
 {
     position: absolute;
     left: -1.2em;
 
     width: 1.2em;
-}
-
-.b-menu-vert_list_blocks .b-menu-vert__text:before
-{
-    content: '\2014\a0';
-}
-
-.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__item
-{
-    padding: 0.2em 0 0.1em 1em;
-
-    cursor: default;
-
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__item:hover
-{
-
-
-    background: #fafafa;
 }
