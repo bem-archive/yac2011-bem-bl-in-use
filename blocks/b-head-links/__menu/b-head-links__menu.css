@@ -1,14 +1,23 @@
 .b-head-links__menu
 {
+    font-size: 110%;
+
     display: inline-block;
 
+    padding-left: 7px;
+
+    background: url(b-head-links__menu.png) no-repeat 0 15px;
+}
+
+.b-head-links__menu .b-menu-vert__layout
+{
     padding: 10px 14px;
 
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 
-    box-shadow:2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
 
     background: #fff;
 }

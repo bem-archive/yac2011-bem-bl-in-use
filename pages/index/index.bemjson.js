@@ -114,7 +114,6 @@
                                                 ],
                                                 'item-content': {
                                                     elem: 'item-content',
-                                                    elemMods: { visibility: 'visible'},
                                                     content: {
                                                         block: 'b-menu-vert',
                                                         mods: { type: 'submenu'},
@@ -129,7 +128,7 @@
                                                                     },
                                                                     {
                                                                         elem: 'text',
-                                                                        content: 'Блок-хелпер для создания других блоков'
+                                                                        content: 'Хелпер для создания других блоков'
                                                                     }
                                                                 ]
                                                             },
@@ -143,7 +142,7 @@
                                                                     },
                                                                     {
                                                                         elem: 'text',
-                                                                        content: 'Блок с плагинами для jQuery'
+                                                                        content: 'Плагины для jQuery'
                                                                     }
                                                                 ]
                                                             }
@@ -165,7 +164,6 @@
                                                 ],
                                                 'item-content': {
                                                     elem: 'item-content',
-                                                    elemMods: { visibility: 'visible'},
                                                     content: {
                                                         block: 'b-menu-vert',
                                                         mods: { type: 'submenu'},
@@ -320,7 +318,7 @@
                                                                     },
                                                                     {
                                                                         elem: 'text',
-                                                                        content: 'Блок с плагинами для jQuery'
+                                                                        content: 'Плагины для jQuery'
                                                                     }
                                                                 ]
                                                             },
@@ -334,7 +332,7 @@
                                                                     },
                                                                     {
                                                                         elem: 'text',
-                                                                        content: 'Блок для сбора и провайдинга информации о UserAgent'
+                                                                        content: 'Провайдинг информации о UserAgent'
                                                                     }
                                                                 ]
                                                             }

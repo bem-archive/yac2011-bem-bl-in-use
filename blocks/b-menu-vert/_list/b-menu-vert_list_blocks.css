@@ -1,3 +1,8 @@
+.b-menu-vert_list_blocks
+{
+    font-size: 110%;
+}
+
 .b-menu-vert_list_blocks .b-menu-vert__text,
 .b-menu-vert_list_blocks .b-menu-vert__trigger
 {
@@ -43,27 +48,45 @@
 
 .b-menu-vert_list_blocks .b-menu-vert_type_submenu
 {
-    margin-bottom: 7px;
-}
-
-.b-menu-vert_list_blocks .b-menu-vert
-{
-    margin-left: 10em;
+    margin: 1em 0 1.4em 10em;
 }
 
 .b-menu-vert_list_blocks .b-menu-vert__text
 {
-    font-size: 90%;
     font-style: italic;
 
-    padding-left: 40px;
-
-    white-space: nowrap;
+    padding-left: 0.3em;
 
     color: #7f7e7e;
 }
 
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-menu-vert__text
+{
+    font-size: 90%;
+    position: relative;
+
+    display: block;
+
+    margin-left: 10em;
+    padding: 0;
+
+    line-height: 1.6em;
+}
+
+.b-menu-vert_list_blocks .b-menu-vert_type_submenu .b-link
+{
+    float: left;
+}
+
+.b-menu-vert_list_blocks  .b-menu-vert_type_submenu .b-menu-vert__text:before
+{
+    position: absolute;
+    left: -1.2em;
+
+    width: 1.2em;
+}
+
 .b-menu-vert_list_blocks .b-menu-vert__text:before
 {
-    content: '— ';
+    content: '\2014\a0';
 }
