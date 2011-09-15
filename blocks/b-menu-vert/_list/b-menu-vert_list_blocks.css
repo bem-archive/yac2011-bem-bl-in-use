@@ -22,11 +22,17 @@
     font-size: 80%;
     font-weight: bold;
 
+    display: inline-block;
+
+    width: 0.8em;
+
     content: '+ ';
 }
 
 .b-menu-vert_list_blocks .b-menu-vert__trigger_state_opened:before
 {
+    vertical-align: text-top;
+
     content: '- ';
 }
 

@@ -104,20 +104,8 @@
                                                 elem: 'item',
                                                 content: [
                                                     {
-                                                            block: 'b-link',
-                                                            mods: { pseudo: 'yes', inner: 'yes' },
-                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger'}],
-                                                            content: [
-                                                                {
-                                                                    block: 'b-icon',
-                                                                    url: 'http://yandex.st/lego/_/Kx6F6RQnQFitm0qRxX7vpvfP0K0.png',
-                                                                    alt: 'Иконка Серпа'
-                                                                },
-                                                                {
-                                                                    elem: 'inner',
-                                                                    content: 'Общие блоки'
-                                                                }
-                                                            ]
+                                                        elem: 'trigger',
+                                                        content: 'blocks-common'
                                                     },
                                                     {
                                                         elem: 'text',
@@ -126,25 +114,38 @@
                                                 ],
                                                 'item-content': {
                                                     elem: 'item-content',
+                                                    elemMods: { visibility: 'visible'},
                                                     content: {
                                                         block: 'b-menu-vert',
                                                         mods: { type: 'submenu'},
                                                         content: [
                                                             {
                                                                 elem: 'item',
-                                                                content: {
-                                                                    block: 'b-link',
-                                                                    url: '/',
-                                                                    content: 'i-bem'
-                                                                }
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'i-bem'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Блок-хелпер для создания других блоков'
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'item',
-                                                                content: {
-                                                                    block: 'b-link',
-                                                                    url: '/',
-                                                                    content: 'i-jquery'
-                                                                }
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'i-jquery'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Блок с плагинами для jQuery'
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     }
@@ -164,33 +165,178 @@
                                                 ],
                                                 'item-content': {
                                                     elem: 'item-content',
+                                                    elemMods: { visibility: 'visible'},
                                                     content: {
                                                         block: 'b-menu-vert',
                                                         mods: { type: 'submenu'},
                                                         content: [
                                                             {
                                                                 elem: 'item',
-                                                                content: {
-                                                                    block: 'b-link',
-                                                                    url: '/',
-                                                                    content: 'b-icon'
-                                                                }
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-icon'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Абстрактная&nbsp;иконка'
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'item',
-                                                                content: {
-                                                                    block: 'b-link',
-                                                                    url: '/',
-                                                                    content: 'b-layout-table'
-                                                                }
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-layout-table'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Раскладка таблицей'
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'item',
-                                                                content: {
-                                                                    block: 'b-link',
-                                                                    url: '/',
-                                                                    content: 'b-link'
-                                                                }
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-link'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Ссылка'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-logo'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Логотип'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-menu-horiz'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Горизонтальное меню'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-menu-vert'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Вертикальное меню'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-page'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Обвязка страницы'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-search'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Форма поиска'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'b-text'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Блок для работы с текстом'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'i-bem'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Хелпер для создания других блоков'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'i-jquery'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Блок с плагинами для jQuery'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/',
+                                                                        content: 'i-ua'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'Блок для сбора и провайдинга информации о UserAgent'
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     }
