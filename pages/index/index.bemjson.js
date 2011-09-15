@@ -352,7 +352,7 @@
                                 elem: 'cell',
                                 elemMods: { position: 'right' },
                                 content: {
-                                    block: 'b-info',
+                                    block: 'b-content',
                                     content: {
                                         block: 'b-text',
                                         content: [

@@ -1,9 +1,9 @@
-.b-info
+.b-content
 {
     padding: 20px 45px 100px;
 
     box-shadow: 0 1px 10px #bfbfbf;
 
     border-collapse: separate;
-    background: #f8f8f8 url(b-info.png) no-repeat 100% 100%;
+    background: #f8f8f8 url(b-content.png) no-repeat 100% 100%;
 }
