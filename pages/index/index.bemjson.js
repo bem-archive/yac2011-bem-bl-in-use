@@ -31,13 +31,7 @@
                     },
                     {
                         block: 'b-logo',
-                        content: [
-                            {
-                                elem: 'link',
-                                url: '/',
-                                title: 'BEM-BL',
-                                content: 'BEM-BL'
-                            },
+                        content: ['BEM-BL',
                             {
                                 elem: 'text',
                                 content: 'blocks library'
@@ -108,7 +102,9 @@
                                                     elem: 'item',
                                                     content: [
                                                         {
-                                                            elem: 'trigger',
+                                                            block: 'b-link',
+                                                            mods: { pseudo: 'yes'},
+                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger' }],
                                                             content: 'blocks-common'
                                                         },
                                                         {
@@ -158,7 +154,9 @@
                                                     elem: 'item',
                                                     content: [
                                                         {
-                                                            elem: 'trigger',
+                                                            block: 'b-link',
+                                                            mods: { pseudo: 'yes'},
+                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger', elemMods: { state: 'opened' }}],
                                                             content: 'blocks-desktop'
                                                         },
                                                         {
@@ -168,6 +166,7 @@
                                                     ],
                                                     'item-content': {
                                                         elem: 'item-content',
+                                                        elemMods: { visibility: 'visible'},
                                                         content: {
                                                             block: 'b-menu-vert',
                                                             mods: { type: 'submenu'},
