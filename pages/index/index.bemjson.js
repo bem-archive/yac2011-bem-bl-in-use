@@ -156,7 +156,7 @@
                                                         {
                                                             block: 'b-link',
                                                             mods: { pseudo: 'yes'},
-                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger', elemMods: { state: 'opened' }}],
+                                                            mix: [{ block: 'b-menu-vert', elem: 'trigger' }],
                                                             content: 'blocks-desktop'
                                                         },
                                                         {
@@ -166,7 +166,6 @@
                                                     ],
                                                     'item-content': {
                                                         elem: 'item-content',
-                                                        elemMods: { visibility: 'visible'},
                                                         content: {
                                                             block: 'b-menu-vert',
                                                             mods: { type: 'submenu'},
@@ -342,6 +341,54 @@
                                                             ]
                                                         }
                                                     }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            content: [
+                                                {
+                                                    elem: 'h4',
+                                                    content: 'Пример кода технологии bemjson'
+                                                },
+                                                {
+                                                    elem: 'pre',
+                                                    content: "{\n" +
+                                                        "    block: 'b-icon',\n" +
+                                                        "    url: 'http://clck.ru/Ktgh',\n" +
+                                                        "    alt: 'Иконка'\n" +
+                                                    "}"
+                                                },
+                                                {
+                                                    elem: 'h4',
+                                                    content: 'Пример кода технологии bemhtml'
+                                                },
+                                                {
+                                                    elem: 'pre',
+                                                    content: "block b-icon {\n\n" +
+                                                        "    tag: 'img'\n" +
+                                                        "    attrs: {\n\n" +
+                                                            "        var ctx = this.ctx,\n" +
+                                                                "            a = { src: 'http://clck.ru/KtgU', alt: '' },\n" +
+                                                                "            props = ['alt', 'width', 'height'], p;\n\n" +
+                                                            "        ctx.url && (a.src = ctx.url);\n" +
+                                                            "        while(p = props.shift()) ctx[p] && (a[p] = ctx[p]);\n\n" +
+                                                            "        return a;\n" +
+                                                        "    }\n\n" +
+                                                    "}"
+                                                },
+                                                {
+                                                    elem: 'h4',
+                                                    content: 'Пример кода технологии css'
+                                                },
+                                                {
+                                                    elem: 'pre',
+                                                    content: ".b-icon\n" +
+                                                        "{\n" +
+                                                            "    font: 0/0 a;\n\n" +
+
+                                                            "    border: 0;\n" +
+                                                        "}\n"
                                                 }
                                             ]
                                         }
