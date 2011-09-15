@@ -1,6 +1,10 @@
 .b-logo
 {
     font-size: 340%;
+
+    display: inline-block;
+
+    margin-left: 0.7em;
 }
 
 .b-logo__link:link,
