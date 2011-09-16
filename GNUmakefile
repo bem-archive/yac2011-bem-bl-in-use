@@ -58,6 +58,6 @@ clean:
 
 .PRECIOUS: next
 next: clean
-	git checkout 2
+	git checkout 3
 
 .PHONY: all
