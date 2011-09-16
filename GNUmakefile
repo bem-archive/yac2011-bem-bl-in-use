@@ -51,4 +51,13 @@ DO_GIT=@echo -- git $1 $2; \
 bem-bl:
 	$(call DO_GIT,git://github.com/bem/bem-bl.git,$@)
 
+.PRECIOUS: clean
+clean:
+	git clean -d -f
+	git checkout -f
+
+.PRECIOUS: next
+next: clean
+	git checkout 1
+
 .PHONY: all
