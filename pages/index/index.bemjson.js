@@ -10,29 +10,40 @@
     content: {
         block: 'b-page-inner',
         content: [
-         {
-                block: 'b-layout-table',
-                mods: { layout: '54-46' },
-                content: [
-                    {
+            {
+                block: 'b-head',
+                content: 'Шапка'
+            },
+            {
+                content: {
+                    block: 'b-layout-table',
+                    mods: { layout: '60-40'},
+                    content: {
                         elem: 'row',
                         content: [
                             {
                                 elem: 'cell',
-                                elemMods: { position: 'left' },
+                                elemMods: { position: 'left'},
                                 content: {
                                     elem: 'inner',
-                                    content: 'Cell 1'
+                                    content: [
+                                        {
+                                            content: 'здесь будет меню'
+                                        },
+                                        {
+                                            content: 'здесь будет не меню'
+                                        }
+                                    ]
                                 }
                             },
                             {
                                 elem: 'cell',
-                                elemMods: { position: 'right' },
-                                content: 'Cell 2'
+                                elemMods: { position: 'right'},
+                                content: 'Second cell'
                             }
                         ]
                     }
-                ]
+                }
             }
         ]
     }
