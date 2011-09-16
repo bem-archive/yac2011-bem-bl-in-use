@@ -8,6 +8,15 @@
         { elem: 'js', url:'index.js'}
     ],
     content: {
-
+        block: 'b-page-inner',
+        content: [
+            {
+                block: 'b-head',
+                content: 'Шапка'
+            },
+            {
+                content: 'Не шапка'
+            }
+        ]
     }
 })
