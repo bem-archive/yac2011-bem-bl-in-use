@@ -2,10 +2,10 @@
     block: 'b-page',
     title: 'index',
     head: [
-        { elem: 'css', url: 'index.css'},
-        { elem: 'css', url: 'index.ie.css', ie: 'lt IE 8'},
-        { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url:'index.js'}
+        { elem: 'css', url: 'index.css' },
+        { elem: 'css', url: 'index.ie.css', ie: 'lt IE 8' },
+        { block: 'i-jquery', elem: 'core' },
+        { elem: 'js', url:'index.js' }
     ],
     content: {
         block: 'b-page-inner',
@@ -15,7 +15,7 @@
                 content: [
                     {
                         block: 'b-link',
-                        mods: { inner: 'yes'},
+                        mods: { inner: 'yes' },
                         mix: [{ block: 'b-yaru-link' }],
                         url: 'http://clubs.ya.ru/bem/',
                         content: [
@@ -40,7 +40,7 @@
                     },
                     {
                         block: 'b-search',
-                        mix: [{ block: 'b-head', elem: 'search'}],
+                        mix: [{ block: 'b-head', elem: 'search' }],
                         attrs: { action: '/' },
                         input: { elem: 'input' },
                         button: { elem: 'button' }
@@ -96,14 +96,14 @@
                                         {
                                             block: 'b-menu-vert',
                                             js: true,
-                                            mods: { list: 'blocks'},
+                                            mods: { list: 'blocks' },
                                             content: [
                                                 {
                                                     elem: 'item',
                                                     content: [
                                                         {
                                                             block: 'b-link',
-                                                            mods: { pseudo: 'yes'},
+                                                            mods: { pseudo: 'yes' },
                                                             mix: [{ block: 'b-menu-vert', elem: 'trigger' }],
                                                             content: 'blocks-common'
                                                         },
@@ -116,7 +116,7 @@
                                                         elem: 'item-content',
                                                         content: {
                                                             block: 'b-menu-vert',
-                                                            mods: { type: 'submenu'},
+                                                            mods: { type: 'submenu' },
                                                             content: [
                                                                 {
                                                                     elem: 'item',
@@ -155,7 +155,7 @@
                                                     content: [
                                                         {
                                                             block: 'b-link',
-                                                            mods: { pseudo: 'yes'},
+                                                            mods: { pseudo: 'yes' },
                                                             mix: [{ block: 'b-menu-vert', elem: 'trigger' }],
                                                             content: 'blocks-desktop'
                                                         },
@@ -168,7 +168,7 @@
                                                         elem: 'item-content',
                                                         content: {
                                                             block: 'b-menu-vert',
-                                                            mods: { type: 'submenu'},
+                                                            mods: { type: 'submenu' },
                                                             content: [
                                                                 {
                                                                     elem: 'item',
