@@ -7,5 +7,5 @@
         { block: 'i-jquery', elem: 'core' },
         { elem: 'js', url:'index.js' }
     ],
-    content: 'content'
+    content: 'Здесь будет наша страничка'
 })
