@@ -2,10 +2,10 @@
     block: 'b-page',
     title: 'index',
     head: [
-        { elem: 'css', url: 'index.css'},
-        { elem: 'css', url: 'index.ie.css', ie: 'lt IE 8'},
-        { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url:'index.js'}
+        { elem: 'css', url: 'index.css' },
+        { elem: 'css', url: 'index.ie.css', ie: 'lt IE 8' },
+        { block: 'i-jquery', elem: 'core' },
+        { elem: 'js', url:'index.js' }
     ],
     content: {
         block: 'b-page-inner',
@@ -15,29 +15,25 @@
                 content: 'Шапка'
             },
             {
+                block: 'b-layout-table',
+                mods: { layout: '60-40' },
                 content: {
-                    block: 'b-layout-table',
-                    mods: { layout: '60-40'},
-                    content: {
-                        elem: 'row',
-                        content: [
-                            {
-                                elem: 'cell',
-                                elemMods: { position: 'left'},
-                                content: {
-                                    elem: 'inner',
-                                    content: [
-                                        'здесь будет меню'
-                                    ]
-                                }
-                            },
-                            {
-                                elem: 'cell',
-                                elemMods: { position: 'right'},
-                                content: 'Second cell'
+                    elem: 'row',
+                    content: [
+                        {
+                            elem: 'cell',
+                            elemMods: { position: 'left' },
+                            content: {
+                                elem: 'inner',
+                                content: 'здесь будет меню'
                             }
-                        ]
-                    }
+                        },
+                        {
+                            elem: 'cell',
+                            elemMods: { position: 'right' },
+                            content: 'Second cell'
+                        }
+                    ]
                 }
             }
         ]
