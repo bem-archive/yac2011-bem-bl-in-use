@@ -60,4 +60,4 @@ clean:
 next: clean
 	git checkout 2
 
-.PHONY: all
+.PHONY: all clean next
