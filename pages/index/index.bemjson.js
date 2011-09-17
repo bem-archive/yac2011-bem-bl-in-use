@@ -16,7 +16,7 @@
             },
             {
                 block: 'b-layout-table',
-                mods: { layout: '60-40' },
+                mods: { layout: '54-46' },
                 content: {
                     elem: 'row',
                     content: [
