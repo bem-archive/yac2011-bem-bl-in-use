@@ -9,6 +9,22 @@
     ],
     content: {
         block: 'b-page-inner',
-        content: 'Это мой блок. В нем будет лежать менююю'
+        content: {
+            block: 'b-menu-vert',
+            js: true,
+            content: [
+                {
+                    elem: 'item',
+                    content: {
+                        elem: 'trigger',
+                        content: 'Это тригер'
+                    },
+                    'item-content': {
+                        elem: 'item-content',
+                        content: 'Вложенное меню'
+                    }
+                }
+            ]
+        }
     }
 })
