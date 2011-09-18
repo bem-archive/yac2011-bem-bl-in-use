@@ -1,7 +1,7 @@
 .PRECIOUS: branches
 branches:
 	for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v first`; do \
-	    git branch --track $${branch##*/} $branch \
+	    git branch --track $${branch##*/} $$branch \
 	done
 
 .PRECIOUS: clean
