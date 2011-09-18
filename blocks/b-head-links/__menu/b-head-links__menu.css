@@ -1,0 +1,31 @@
+.b-head-links__menu
+{
+    font-size: 90%;
+
+    padding-left: 7px;
+
+    background: url(b-head-links__menu.png) no-repeat 0 15px;
+}
+
+.b-head-links__menu .b-menu-vert__layout
+{
+    padding: 10px 14px;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    box-shadow: 2px 2px 2px #ccc;
+
+    background: #fff;
+}
+
+.b-head-links__menu .b-menu-vert__layout-unit
+{
+    margin-bottom: 5px;
+}
+
+.b-head-links__menu .b-menu-vert__layout-unit_position_last
+{
+    margin-bottom: 0;
+}

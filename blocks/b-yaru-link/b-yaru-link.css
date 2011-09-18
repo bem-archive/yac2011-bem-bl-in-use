@@ -1,0 +1,14 @@
+.b-yaru-link
+{
+    font-size: 80%;
+}
+
+.b-yaru-link .b-icon
+{
+    margin-right: 3px;
+    padding: 16px 0 0 16px;
+
+    vertical-align: middle;
+
+    background: url(b-yaru-link.png) no-repeat;
+}
