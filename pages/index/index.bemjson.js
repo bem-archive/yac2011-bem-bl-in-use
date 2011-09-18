@@ -31,7 +31,40 @@
                     'item-content': {
                         elem: 'item-content',
                         elemMods: { visibility: 'visible' },
-                        content: 'Вложенное меню'
+                        content: {
+                            block: 'b-menu-vert',
+                            mods: { type: 'submenu' },
+                            content: [
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            content: 'i-bem'
+                                        },
+                                        {
+                                            elem: 'text',
+                                            content: 'Хелпер для создания блоков'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            content: 'i-jquery'
+                                        },
+                                        {
+                                            elem: 'text',
+                                            content: 'Плагины для jQuery'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 }
             ]
