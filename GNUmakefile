@@ -1,7 +1,9 @@
-.PRECIOUS: branches
+BRANCHES=$(shell git branch -a | grep remotes | grep -v HEAD | grep -v first)
+
+.PHONY: branches
 branches:
-	for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v first`; do \
-	    git branch --track $${branch##*/} $$branch \
+	for branch in $(BRANCHES); do \
+		git branch --track $${branch##*/} $$branch; \
 	done
 
 .PRECIOUS: clean
@@ -13,4 +15,4 @@ clean:
 next: clean
 	git checkout pages
 
-.PHONY: all next clean branches
+.PHONY: next clean branches
