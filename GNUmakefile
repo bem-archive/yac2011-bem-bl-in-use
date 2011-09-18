@@ -30,10 +30,12 @@ BEM_CREATE=bem create block \
 .PRECIOUS: %.css
 %.css: %.deps.js
 	$(call BEM_BUILD,css)
+	borschik -t css -i $@ -o $(@D)/_$(@F)
 
 .PRECIOUS: %.ie.css
 %.ie.css: %.deps.js
 	$(call BEM_BUILD,ie.css)
+	borschik -t css -i $@ -o $(@D)/_$(@F)
 
 .PRECIOUS: %.js
 %.js: %.deps.js
