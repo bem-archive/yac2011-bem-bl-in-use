@@ -60,6 +60,6 @@ clean:
 
 .PRECIOUS: next
 next: clean
-	git checkout 1
+	git checkout 2
 
 .PHONY: all next clean branches
