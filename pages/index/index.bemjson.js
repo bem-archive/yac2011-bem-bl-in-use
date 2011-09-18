@@ -9,11 +9,6 @@
     ],
     content: {
         block: 'b-page-inner',
-        content: [
-            {
-                block: 'b-head',
-                content: 'Шапка'
-            },'Не шапка'
-        ]
+        content: 'Это мой блок. В нем будет лежать менююю'
     }
 })
