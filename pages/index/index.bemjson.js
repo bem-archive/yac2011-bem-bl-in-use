@@ -9,33 +9,32 @@
     ],
     content: {
         block: 'b-page-inner',
-        content: [
-            {
-                block: 'b-head',
-                content: 'Шапка'
-            },
-            {
-                block: 'b-layout-table',
-                mods: { layout: '54-46' },
-                content: {
-                    elem: 'row',
+        content: {
+            block: 'b-menu-vert',
+            js: true,
+            mods: { list: 'blocks' },
+            content: [
+                {
+                    elem: 'item',
                     content: [
                         {
-                            elem: 'cell',
-                            elemMods: { position: 'left' },
-                            content: {
-                                elem: 'inner',
-                                content: 'здесь будет меню'
-                            }
+                            block: 'b-link',
+                            mods: { pseudo: 'yes' },
+                            mix: [{ block: 'b-menu-vert', elem: 'trigger', elemMods: { state: 'opened' } }],
+                            content: 'blocks-common'
                         },
                         {
-                            elem: 'cell',
-                            elemMods: { position: 'right' },
-                            content: 'Second cell'
+                            elem: 'text',
+                            content: 'Общие блоки'
                         }
-                    ]
+                    ],
+                    'item-content': {
+                        elem: 'item-content',
+                        elemMods: { visibility: 'visible' },
+                        content: 'Вложенное меню'
+                    }
                 }
-            }
-        ]
+            ]
+        }
     }
 })
