@@ -1,0 +1,41 @@
+.b-logo
+{
+    font-size: 340%;
+
+    display: inline-block;
+
+    margin-left: 0.7em;
+}
+
+.b-logo__link:link,
+.b-logo__link:hover,
+.b-logo__link:visited
+{
+    text-decoration: none;
+
+    color: #444;
+}
+
+.b-logo__text
+{
+    font: 60% 'Times New Roman';
+    font-style: italic;
+
+    margin-left: 0.5em;
+}
+
+.b-logo__link
+{
+    -webkit-transition: color 1s ease-in-out;
+	-moz-transition: color 1s ease-in-out;
+	-o-transition: color 1s ease-in-out;
+	-ms-transition: color 1s ease-in-out;
+	transition: color 1s ease-in-out;
+}
+
+.b-logo__link:hover
+{
+    color: #08f;
+}
+
+
