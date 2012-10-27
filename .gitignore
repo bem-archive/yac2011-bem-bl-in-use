@@ -1,8 +1,9 @@
 bem-bl
 node_modules
-pages/*/*.css
-pages/*/*.js
-!pages/*/*.bemjson.js
-pages/*/*.html
-pages/*/*.bemhtml
+.DS_Store
 .idea
+.svn
+.bem/cache
+pages/*/*.*
+!pages/*/*.bemjson.js
+!pages/.bem/*

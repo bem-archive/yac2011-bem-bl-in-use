@@ -1,56 +1,13 @@
-all:: bem-bl
-all:: $(patsubst %.bemjson.js,%.html,$(wildcard pages/*/*.bemjson.js))
+.DEFAULT_GOAL := all
+BEM := ./node_modules/.bin/bem
 
-BEM_BUILD=bem build \
-	-l bem-bl/blocks-common/ \
-	-l bem-bl/blocks-desktop/ \
-	-l blocks/ \
-	-d $< \
-	-t $1 \
-	-o $(@D) \
-	-n $(*F)
+ifneq (,$(findstring B,$(MAKEFLAGS)))
+BEM_FLAGS := --force
+endif
 
-BEM_CREATE=bem create block \
-		-l pages \
-		-T $1 \
-		$(*F)
+%::
+	$(if $(findstring GNUmakefile,$@),,$(BEM) make $@ $(BEM_FLAGS))
 
-%.html: %.bemhtml.js %.css %.js %.ie.css
-	$(call BEM_CREATE,bem-bl/blocks-common/i-bem/bem/techs/html.js)
-
-%.bemhtml.js: %.deps.js
-	$(call BEM_BUILD,bem-bl/blocks-common/i-bem/bem/techs/bemhtml.js)
-
-%.deps.js: %.bemdecl.js
-	$(call BEM_BUILD,deps.js)
-
-%.bemdecl.js: %.bemjson.js
-	$(call BEM_CREATE,bemdecl.js)
-
-.PRECIOUS: %.css
-%.css: %.deps.js
-	$(call BEM_BUILD,css)
-	borschik -t css -i $@ -o $(@D)/_$(@F)
-
-.PRECIOUS: %.ie.css
-%.ie.css: %.deps.js
-	$(call BEM_BUILD,ie.css)
-	borschik -t css -i $@ -o $(@D)/_$(@F)
-
-.PRECIOUS: %.js
-%.js: %.deps.js
-	$(call BEM_BUILD,js)
-
-
-DO_GIT=@echo -- git $1 $2; \
-	if [ -d $2 ]; \
-		then \
-			cd $2 && git pull origin master; \
-		else \
-			git clone $1 $2; \
-	fi
-
-bem-bl:
-	$(call DO_GIT,git://github.com/bem/bem-bl.git,$@)
-
-.PHONY: all
+.PHONY: clean
+clean::
+	$(BEM) make -m clean

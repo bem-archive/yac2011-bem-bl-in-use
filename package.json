@@ -1,0 +1,20 @@
+{
+  "author": "",
+  "name": "yac2011-bem-bl-in-use",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bem/yac2011-bem-bl-in-use.git"
+  },
+  "engines": {
+    "node": "0.6 | 0.7 | 0.8"
+  },
+  "dependencies": {
+    "bem": "~0.5.17",
+    "ometajs": "~3.1.4",
+    "xjst": "~0.3.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "private": true
+}
