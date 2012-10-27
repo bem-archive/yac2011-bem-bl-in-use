@@ -1,0 +1,9 @@
+bem-bl
+node_modules
+.DS_Store
+.idea
+.svn
+.bem/cache
+pages/*/*.*
+!pages/*/*.bemjson.js
+!pages/.bem/*
